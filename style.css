@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --light: rgb(255, 255, 255);
+    --dark: rgb(14, 14, 14);
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV */
+.topnav {
+    overflow: hidden;
+    background: var(--dark);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+  
+.topnav #links {
+    display: none;
+}
+  
+.topnav a {
+    color: var(--light);
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+}
+  
+.topnav a.icon {
+    background: var(--dark);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.active {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* WELCOME */
+.welcomeBox {
+    padding: 1.25rem;
+}
+
+.welcomeBox h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.welcomeBoxP {
+    margin-top: 0.5rem;
+}
+
+/* PILL */
+.pill {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--dark);
+    display: inline-block;
+    border-radius: 4rem;
+    margin-top: 0.4rem;
+}
+
+.pillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.footerPill {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--light);
+    display: inline-block;
+    border-radius: 4rem;
+    margin-top: 0.4rem;
+    color: var(--light);
+}
+
+.footerPill:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.footerPill:first-child {
+    margin-right: 0.5rem;
+}
+
+/* SECTION */
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    padding: 1.25rem;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+/* BUTTONS */
+.btnSolid {
+    background: var(--dark);
+    padding: 0.3rem 1rem;
+    color: var(--light);
+    border-radius: 0.25rem;
+}
+
+.btnOutline {
+    border: 1px solid var(--dark);
+    padding: 0.3rem 1rem;
+    color: var(--dark);
+    border-radius: 0.25rem;
+}
+
+.btnOutline:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.btnSolid:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.btnContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* MY PROJECTS HEADING */
+
+.headingContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headingContainer h4 {
+    font-weight: 500;
+}
+
+.headingContainer .fa-arrow-turn-down {
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+}
+
+.educationPage {
+    margin-bottom: 1rem;
+}
+
+.interestsPage {
+    margin: 1rem;
+}
+
+/* IMG */
+.imgLayoutContainer {
+     display: flex;
+     flex-wrap: wrap;
+     width: 80%;
+     margin: auto;
+     margin-top: 2rem;
+} 
+
+.imgContainer {
+    height: 250px;
+    width: 330px;
+    margin: auto;
+    margin-bottom: 0.25rem;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem;
+    background: var(--dark);
+    margin-top: 0.5rem;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    color: var(--light);
+    margin-bottom: 0.75rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    color: var(--light);
+    margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 430px) {
+    section {
+      width: 430px;
+      margin: auto;
+    }
+
+    .welcomeBox {
+        width: 600px;
+        margin: auto;
+    }
+
+    .educationPagePills {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .projectContainer {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
