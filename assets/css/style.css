@@ -3,7 +3,7 @@
 :root {
     --light: rgb(255, 255, 255);
     --dark: rgb(14, 14, 14);
-  }
+}
   
 * {
     margin: 0;
