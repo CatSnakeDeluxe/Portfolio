@@ -107,13 +107,13 @@ a {
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     margin: auto;
 }
 
 section {
-    /* height: 420px; */
+    height: fit-content;
     padding: 1.25rem;
 }
 
@@ -232,7 +232,7 @@ footer p {
 @media screen and (min-width: 430px) {
     section {
       width: 430px;
-      margin: auto;
+      /* margin: auto; */
     }
 
     .welcomeBox {
